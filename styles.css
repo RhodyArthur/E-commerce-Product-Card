@@ -1,0 +1,114 @@
+*,::before, ::after {
+    box-sizing: border-box;
+    margin: unset;
+    padding: unset;
+}
+
+
+html,body {
+    width: 100%;
+    height: 100vh;
+    background-color: #E9E9E9;
+    /* font-family: 'Rubik', sans-serif; */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 20px;
+}
+
+.product-image {
+    height: 50%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sub-content {
+    background-color: white;
+    height: 50%;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.article-title {
+    margin-top: 20px;
+    margin-bottom: 3px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    position: absolute;
+    padding: 10px;
+    bottom: 5px;
+}
+.title {
+    margin-bottom: 3px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.sub-title {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #757575;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.price {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    height: 15%;
+    border-radius: 20px;
+    border: transparent;
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: rgba(119, 119, 252, 0.438);
+}
+
+
+/* 
+========================
+MEDIA QUERIES
+======================== */
+@media(min-width: 768px){
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 768px;
+    }
+    .product-image {
+        height: 100%;
+        width: 100%;
+    }
+    img {
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .sub-content {
+        width: 50%;
+        height: 100%;
+        border-radius: 0 20px 20px 0;
+        padding: 150px 10px;
+    }
+}
